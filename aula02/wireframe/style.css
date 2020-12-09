@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: calibri;
+}
+
+/* div {
+    border: 1.3px solid black;
+} */
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #003366;
+  font-weight: 700;
+}
+
+h1 span {
+  color: #72120b;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-contact {
+  background: #003366;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.primary-contact,
+.second-contact {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 16px;
+  color: white;
+}
+
+.contact-item {
+  width: 40%;
+  height: 90%;
+}
+
+.contact-item a {
+  color: white;
+  font-size: 16px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+}
+
+.contact-item .wpp {
+  background-color: #2ba531;
+}
+
+.contact-item .wpp:hover {
+  background-color: #239529;
+}
+
+.contact-item .online {
+  background-color: #00b29c;
+}
+
+.contact-item .online:hover {
+  background-color: #048676;
+}
+
+.menu-section {
+  background-color: white;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+  height: 100%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.menu-items {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item {
+  min-width: 15%;
+  height: 80%;
+}
+
+.menu-item a {
+  color: #333333;
+  font-weight: bold;
+  font-size: 17px;
+  background: white;
+  padding: 9px;
+}
+
+.menu-item a:hover {
+  background: #003366;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.img-content {
+  width: 100%;
+  height: 330px;
+}
+
+.info-content {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-info-content {
+  width: 45%;
+  height: 80%;
+  padding: 10px;
+}
+
+.text-info-content h1 {
+  font-weight: 500;
+  font-size: 45px;
+  padding-right: 100px;
+}
+
+.line-decoration {
+  height: 3.5px;
+  background-color: #72120b;
+  border: none;
+  width: 20%;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-info-content p {
+  padding: 20px 0;
+  font-size: 19px;
+  color: #6e6e6e;
+}
+
+.text-info-content button {
+  width: 30%;
+  color: white;
+  font-size: 16px;
+  background-color: #72120b;
+  height: 18%;
+  border: none;
+  border-radius: 10px;
+}
+
+.text-info-content button:hover {
+  transition: ease 0.3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.img-info {
+  width: 36%;
+  height: 80%;
+}
+
+.img-info img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards-content {
+  background: #003366;
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.card {
+  width: 315px;
+  margin: 20px 0;
+  padding: 15px 10px;
+  text-align: center;
+  border: 2px solid #ffffff41;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transition: ease 0.3s;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card h1 {
+  font-weight: 500;
+  font-size: 28px;
+  margin: 35px 0;
+  color: white;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 5px;
+}
+
+.card button {
+  width: 80%;
+  color: white;
+  font-size: 16px;
+  background-color: #72120b;
+  height: 15%;
+  border: none;
+  border-radius: 10px;
+
+  margin-top: 30px;
+}
+
+.card button:hover {
+  cursor: pointer;
+}
+
+.card-img {
+  height: 32%;
+  margin: 10px;
+}
+
+.contact-content {
+  width: 75%;
+  height: 500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  width: 40%;
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-title h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.form {
+  width: 100%;
+  height: 55%;
+  display: flex;
+}
+
+.form1 {
+  width: 80%;
+  padding: 15px;
+  height: 85%;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form1 input {
+  width: 95%;
+  color: #555555;
+  font-size: 16px;
+  padding: 25px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+}
+
+.form1 textarea {
+  width: 95%;
+  height: 95%;
+  color: #ff0000;
+  font-size: 16px;
+  border: none;
+  /* outline: none; */
+}
+
+.contact-content button {
+  width: 100%;
+  background-color: #72120b;
+  height: 65px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  color: white;
+  font-size: 16px;
+}
+
+.contact-content button:hover {
+  transition: ease 0.3s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.map {
+  width: 100%;
+  height: 440px;
+  border: none;
+}
+
+footer {
+  background: #003366;
+  color: white;
+}
+
+.footer-content {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-up {
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.logo-footer img {
+  width: 65%;
+}
+
+.contact-footer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.title-contact h1 {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.title-contact {
+  border-right: 2px solid white;
+}
+
+.info-contact {
+  margin: 10px;
+}
+
+.info-contact p {
+  margin: 5px;
+}
+
+.btn-contact-footer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.contact-item-footer a {
+  color: white;
+  font-size: 16px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  height: 42px;
+  text-align: center;
+  margin: 5px;
+}
+
+.contact-item-footer .footer-wpp {
+  background-color: #2ba531;
+}
+
+.contact-item-footer .footer-wpp:hover {
+  background-color: #239529;
+}
+
+.contact-item-footer .footer-online {
+  background-color: #00b29c;
+}
+
+.contact-item-footer .footer-online:hover {
+  background-color: #048676;
+}
+
+footer hr {
+  color: white;
+}
+
+.footer-down {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
