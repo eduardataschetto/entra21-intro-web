@@ -11,7 +11,7 @@ let campoPalpite = document.querySelector('.campoPalpite');
 let contagemPalpites = 1;
 let botaoReinicio;
 
-envioPalpite.addEventListener('click', function () {
+envioPalpite.addEventListener('click', function (e) {
     let palpite = campoPalpite.value;
     campoPalpite.value = ``
     if (palpite == numeroAleatorio) {
@@ -31,8 +31,8 @@ envioPalpite.addEventListener('click', function () {
             fimRodada()
         }
     } 
-    
 });
+
 
 function fimRodada() {
     label.style.display = 'None'; 
@@ -61,5 +61,5 @@ function reiniciarJogo () {
     campoPalpite.style.display = 'inline';
 
     contagemPalpites = 1;
-    const numeroAleatorio= Math.floor(Math.random() * 100) + 1;
+    numeroAleatorio= Math.floor(Math.random() * 100) + 1;
 }
