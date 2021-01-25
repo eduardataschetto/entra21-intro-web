@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "users",
+    "social_django",
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                "social_django.context_processors.backends",
+                "social_django.context_processors.login_redirect",
             ],
         },
     },
@@ -118,6 +122,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "social_core.backends.github.GithubOAuth2",
+]
+
+SOCIAL_AUTH_GITHUB_KEY = '98217d034ba34b97826f'
+SOCIAL_AUTH_GITHUB_SECRET = 'cf3ee605d8705805ebb10ba2fd28786a4f563fb8'
 
 STATIC_URL = '/static/'
 
